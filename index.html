@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <title>catalog</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Control buttons -->
+    <div id="myBtnContainer">
+      <!-- <button class="btn active" onclick="filterSelection('all')"> all</button> -->
+      <button class="btn" onclick="filterSelection('eyeliner')">eyeliner</button>
+      <button class="btn" onclick="filterSelection('eyeshadow')">eyeshadow</button>
+      <button class="btn" onclick="filterSelection('lips')">lips</button>
+      <button class="btn" onclick="filterSelection('blush')">blush</button>
+      <button class="dropbtn" onmouseover="dropDown()">color</button>
+      <div class="dropdown">
+        <div id="myDropdown" class="dropdown-content">
+          <button class="btn" onclick="filterSelection('red')">red</button>
+          <button class="btn" onclick="filterSelection('black')">black</button>
+          <button class="btn" onclick="filterSelection('pink')">pink</button>
+          <button class="btn" onclick="filterSelection('purple')">purple</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+    <div class="container">
+      <div class="filterDiv eyeliner black">img</div>
+      <div class="filterDiv eyeshadow purple">img</div>
+      <div class="filterDiv lips red">img</div>
+      <div class="filterDiv blush pink">img</div>
+      <div class="filterDiv blush red">img</div>
+      <div class="filterDiv eyeliner red">img</div>
+    </div>
+  </body>
+</html>
